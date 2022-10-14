@@ -1,0 +1,44 @@
+//Boucle pour//
+ALGORITHM Nombres pairs
+VAR
+    i: INTEGER
+BEGIN
+    FOR i FROM 0 TO 100  DO
+        IF (i mod 2 = 0) THEN
+            Write(i, "est pair")
+        ELSE
+            Write(i, "est impair")
+        END_IF
+    END_FOR
+END
+
+//Boucle Tant que//
+ALGORITHM Nombres pairs
+VAR
+    i: INTEGER
+BEGIN
+    WHILE (i <= 100) DO
+        IF (i mod 2 = 0) THEN
+            Write(i, "est pair")
+        ELSE
+            Write(i, "est impair")
+        END_IF
+        i <- i + 1
+    END_WHILE
+END
+
+//Boucle Répéter...Jusqu"a//
+ALGORITHM Nombres pairs
+VAR
+    i: INTEGER
+BEGIN
+    i <- 0
+    REPEAT
+        IF (i mod 2 = 0) THEN
+            Write(i, "est pair")
+        ELSE
+            Write(i, "est impair")
+        END_IF
+        i <- i + 1
+    UNTIL (i > 100)
+END

@@ -1,0 +1,20 @@
+ALGORITHM PGCD
+VAR
+    a,b,min,PGCD: INTEGER
+BEGIN
+    Write("Entrer la valeur de a:");
+    Read(a);
+    Write("Entrer la valeur de b:");
+    Read(b);
+    IF (a > b) THEN
+        min = b
+    ELSE
+        min = a
+    END_IF
+    FOR i FROM 1 TO min  DO
+        IF (a mod i =0 and b mod i =0) THEN
+            PGCD = i
+        END_IF
+    END_FOR
+    Write (PGCD, "est le PGCD de a et b")
+END

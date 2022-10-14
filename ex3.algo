@@ -1,0 +1,27 @@
+ALGORITHM Puissance
+VAR
+    A,n,p: INTEGER
+BEGIN
+    FOR (A = 0)  DO
+        IF (n = 0) THEN
+            p = 1
+        ELSE_IF (n > 0) THEN
+            p = 0
+        ELSE
+            Write("Pas de résultat");
+        END_IF
+    END_FOR
+    FOR (A <> 0)  DO
+        IF (n = 0) THEN
+            p = 1
+        ELSE_IF (n mod 2 = 0) THEN
+            p = A * n
+            Write(p, "est positive")
+        ELSE
+            Write(p, "est négative")
+        END_IF
+    END_FOR
+    IF (n < 0) THEN
+        Write(p, "Tant vers un nombre infiniment petit")
+    END_IF
+END

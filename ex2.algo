@@ -1,0 +1,13 @@
+ALGORITHM Factoriel
+VAR
+    f,i,n : INTEGER
+BEGIN
+    write("Entre un nombre entier");
+    Read(n);
+    f=1;
+    FOR i FROM 2 TO n DO
+        f=f*i
+        i=i+1
+    END_FOR
+    write(f, "est le factoriel")
+END
