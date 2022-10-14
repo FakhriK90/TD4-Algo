@@ -2,6 +2,10 @@ ALGORITHM Puissance
 VAR
     A,n,p: INTEGER
 BEGIN
+Write("Entrer la valeur de A:");
+    Read(A);
+    Write("Entrer la valeur de n:");
+    Read(n);
     FOR (A = 0)  DO
         IF (n = 0) THEN
             p = 1
