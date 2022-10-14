@@ -40,5 +40,5 @@ BEGIN
             Write(i, "est impair")
         END_IF
         i <- i + 1
-    UNTIL (i > 100)
+    UNTIL (i >= 100)
 END
