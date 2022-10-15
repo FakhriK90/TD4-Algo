@@ -1,6 +1,11 @@
-ALGORITHM algorithm_name
+ALGORITHM Moyenne
 VAR
-    set_declarations
+    x,n, moy :INTEGER
 BEGIN
-    set_instructions
+    IF (x < 0) THEN
+        write("ERREUR")
+    END_IF
+    WHILE (x < 0) DO
+        Wriite("Taper une valeur")
+    END_WHILE
 END

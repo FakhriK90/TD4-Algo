@@ -1,6 +1,17 @@
-ALGORITHM algorithm_name
+ALGORITHM Opérations sur un entier
 VAR
-    set_declarations
+    x: INTEGER
 BEGIN
-    set_instructions
+Write("Entrer la valeur de x");
+        Read(x)
+        i <- 0
+    REPEAT
+        Write("Entrer une valeur entre 1 et 4");
+        IF (x <=1 and x>= 3) THEN
+            x = x+1;
+        x = x*2;
+        x = x-4;
+        read (x)
+        END_IF
+    UNTIL (x=4)
 END
