@@ -1,11 +1,23 @@
 ALGORITHM Moyenne
 VAR
-    x,n, moy :INTEGER
+    x,nm, moy,s :INTEGER
 BEGIN
+s <- 0
+nm <- 0
+    REPEAT
     IF (x < 0) THEN
         write("ERREUR")
+        Write("Tapez des entiers strictement positives")
+        Read(x)
     END_IF
-    WHILE (x < 0) DO
-        Wriite("Taper une valeur")
-    END_WHILE
+        
+    IF (x>0) THEN
+    nm <- nm+1
+        s <- s+x
+    
+    END_IF
+    UNTIL (x=0)
+
+    moy = s/mn
+    Write(moy, "est la moyenne")
 END
